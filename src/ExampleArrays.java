@@ -68,6 +68,40 @@ public class ExampleArrays {
 
         System.out.println(Arrays.deepToString(arrM1));
 
+        int[][] ex1 = new int[5][10];
+        int[]   ex2 = new int[10];
+
+        System.out.println("------------------------------");
+        System.out.println("0" + Arrays.deepToString(ex1));
+
+        for (int[] values : ex1) {
+            System.out.println("values1:" + values);
+
+            values[1] = 1;
+            System.out.println("values2:" + values);
+        }
+
+        System.out.println("1" + Arrays.deepToString(ex1));
+        System.out.println("------------------------------");
+
+        for (int[] values : ex1) {
+            System.out.println("values1:" + values);
+            ex1[0] = ex2;
+
+            System.out.println(values.equals(ex1[0]));
+        }
+        System.out.println("2" + Arrays.deepToString(ex1));
+        System.out.println("------------------------------");
+
+        for (int[] values : ex1) {
+            System.out.println("values1:" + values);
+        }
+        System.out.println("3" + Arrays.deepToString(ex1));
+
+
+
+
+
     }
 
 }
