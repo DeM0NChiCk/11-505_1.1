@@ -98,10 +98,38 @@ public class ExampleArrays {
         }
         System.out.println("3" + Arrays.deepToString(ex1));
 
+        int[] res = b(1,2);
+        c(res);
 
+        c(b(1, 2));
+    }
 
+    public static void printArray(int[] arr, int n, int a) {
+        return;
+    }
 
+    public static int count(int[] arr, int n, int a) {
+        return 0;
+    }
 
+    public static int count(int a, int n, int[] arr) {
+        return 0;
+    }
+
+    public static int a(int b) {
+        return 0;
+    }
+
+    public static int a(String b) {
+        return 0;
+    }
+
+    public static int[] b(int a1, int a2) {
+        return new int[2];
+    }
+
+    public static int c(int[] a) {
+        return 1;
     }
 
 }

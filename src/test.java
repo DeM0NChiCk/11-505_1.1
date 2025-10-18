@@ -21,5 +21,7 @@ public class test {
         }
 
         System.out.println("итого" + redP + greenP + orangeP);
+
+
     }
 }
