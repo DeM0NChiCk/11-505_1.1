@@ -60,6 +60,7 @@ public class StringsLesson {
         System.out.println("_________________________");
         System.out.println(Arrays.toString(wordsEx2) + " : ex.split(\"!*(!)!*\")");
 
+        // TODO: ТЫ КТО?
         String a = "Какой у вас аркан?";
         String b = "аоу";
         int res = 0;
