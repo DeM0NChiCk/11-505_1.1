@@ -2,6 +2,7 @@ package main;
 
 import model.Chesspiece;
 import model.Pole;
+import model.Student;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,5 +34,7 @@ public class Main {
         Chesspiece[] chesspieces = {chesspiecePeshka1, chesspiecePeshka2};
         Chess chess = new Chess(chesspieces, pole1);
         chess.play();
+
+        Student luntik = new Student(20, 23432);
     }
 }
