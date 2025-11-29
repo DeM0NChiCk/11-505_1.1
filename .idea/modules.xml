@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OOPExample/OOPExample.iml" filepath="$PROJECT_DIR$/OOPExample/OOPExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOPShop/OOPShop.iml" filepath="$PROJECT_DIR$/OOPShop/OOPShop.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson_11_105.iml" filepath="$PROJECT_DIR$/lesson_11_105.iml" />
     </modules>
   </component>
