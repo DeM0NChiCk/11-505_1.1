@@ -1,6 +1,6 @@
 package model;
 
-public class User {
+public abstract class User {
 
     private int id;
     private String username;
@@ -16,7 +16,18 @@ public class User {
         this.account = new Account(login, password.length());
     }
 
+    public User(String country, int age, String username, String login, String password) {
+        this.username = username;
+        this.country = country;
+        this.age = age;
+        this.account = new Account(login, password.length());
+    }
+
     public User(){}
+
+    private void setUsername(String username) {
+        this.username = username;
+    }
 
     public int getAge() {
         return age;

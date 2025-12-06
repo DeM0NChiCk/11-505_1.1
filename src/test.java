@@ -48,10 +48,36 @@ public class test {
         }
 
         System.out.println(Arrays.deepToString(chessBoard));
-        System.out.println(Arrays.deepToString(chessGet(new String[8][8])));
+//        System.out.println(Arrays.deepToString(chessGet(new String[8][8])));
 
         pal();
 
+        v3_n4();
+
+        int[] array = {24,13,52,35,5,325,3,25,33,454};
+        int result = 0;
+        for(int i = 0; i < array.length; i++) {
+            if(result >= array[i]) {
+                result = array[i];
+            }
+        }
+        System.out.println(result);
+
+        System.out.println(fun2("I love SQL, I need to learn SQL well."));
+
+        String text = "Programming in Java is fun";
+        int count = 0;
+
+        for (int i = 0; i < text.length(); i++) {
+            char ch = text.charAt(i);
+            if (ch>='A' && ch<='Z') {
+                ch = (char) (ch+32);
+            }
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                count++;
+            }
+        }
+        System.out.println("Количество гласных: " + count);
     }
 
     public static int calFac(int n) {
@@ -62,29 +88,20 @@ public class test {
         }
     }
 
-    public static String[][] chessGet (String [][] chessBoard) {
-        String symbol = " ";
-        for (int i = 0; i < chessBoard.length; i++) {
-            for (int j = 0; j < chessBoard[i].length; j++) {
-                if ((i%2) == 0) {
-                    if ((j%2) == 0) {
-                        symbol = "W";
-                    } else if ((j%2) != 0) {
-                        symbol = "B";
-                    }
-                } else {
-                    if ((j%2) == 0) {
-                        symbol = "B";
-                    } else {
-                        symbol = "W";
-                    }
-                }
-                chessBoard[i][j] = symbol;
-            }
-        }
-
-        return chessBoard;
-    }
+//    public static String[][] chessGet (String [][] chessBoard) {
+//        int num = 2;
+//        for (int i = 0; i < chessBoard.length; i++) {
+//            for (int j = 0; j < chessBoard[i].length; j++) {
+//               if (num % 2 == 0) {
+//                   chessBoard[i][j] = "W";
+//               } else {
+//                   chessBoard
+//               }
+//            }
+//        }
+//
+//        return chessBoard;
+//    }
 
     public static void pal() {
         String palindrome = "А роза упала на лапу Азора";
@@ -106,4 +123,35 @@ public class test {
             System.out.println("net");
         }
     }
+
+    public static void v3_n4() {
+         int[] nums = {1,7,4,2,10,9,6};
+         int startI = 0;
+         int endI = nums.length - 1;
+         for (int i = 0; i<nums.length/2;i++) {
+             int a = nums[startI];
+             nums[startI] = nums[endI];
+             nums[endI] = a;
+             startI++;
+             endI--;
+         }
+        System.out.println(Arrays.toString(nums));
+    }
+
+    public static String fun2(String sentance) {
+        String result = " ";
+        String[] sent2 = sentance.split("\\s(\\s)*");
+
+        for (String world: sent2) {
+            if (world.equals("SQL")) {
+                result = result + "Java" + " ";
+            } else {
+                result = result + world + " ";
+            }
+        }
+
+        return result.strip();
+    }
+
+
 }

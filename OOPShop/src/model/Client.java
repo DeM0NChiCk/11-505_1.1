@@ -1,6 +1,7 @@
 package model;
 
-public class Client extends User{
+public class Client extends User {
+
     private String address;
     private int productCount;
 
@@ -11,18 +12,17 @@ public class Client extends User{
         this.address = address;
     }
 
-    public void buyProcutInShop(Product product, int count) {
-        for (int i = 1; i <= count; i++) {
+    public void buyProductInShop(Product product, int count) {
+        for (int i = 0; i<= count; i++) {
             product.removeOne();
             productCount++;
         }
         countBuy++;
-        System.out.println("Покупка совершена! " + product.TAG_NAME + "\nОсталось товара: " + product.getCount());
+        System.out.println("Покупка совершена! " + product.TAG + "\nОсталось товара: " + product.getCount());
     }
 
     @Override
     public void print() {
-        super.print();
         System.out.println("Address: " + address + "\nCount product:" + productCount);
     }
 }
