@@ -1,0 +1,43 @@
+Метод;Аргументы;Статус;Ошибка;Время(мс)
+testIsPrime;[0];PASS;Success;7
+testIsPrime;[1];PASS;Success;1
+testIsPrime;[-1];PASS;Success;0
+testIsPrime;[2147483647];PASS;Success;0
+testIsPrime;[-2147483648];PASS;Success;0
+testIsPrime;[73];PASS;Success;0
+testDevide;[0, 0];FAIL;ArithmeticException: / by zero;12
+testDevide;[0, 1];PASS;Success;0
+testDevide;[0, -1];PASS;Success;0
+testDevide;[0, 2147483647];PASS;Success;0
+testDevide;[0, -2147483648];PASS;Success;0
+testDevide;[0, 73];PASS;Success;0
+testDevide;[1, 0];FAIL;ArithmeticException: / by zero;0
+testDevide;[1, 1];PASS;Success;0
+testDevide;[1, -1];PASS;Success;0
+testDevide;[1, 2147483647];PASS;Success;0
+testDevide;[1, -2147483648];PASS;Success;0
+testDevide;[1, 73];PASS;Success;0
+testDevide;[-1, 0];FAIL;ArithmeticException: / by zero;0
+testDevide;[-1, 1];PASS;Success;0
+testDevide;[-1, -1];PASS;Success;0
+testDevide;[-1, 2147483647];PASS;Success;0
+testDevide;[-1, -2147483648];PASS;Success;0
+testDevide;[-1, 73];PASS;Success;0
+testDevide;[2147483647, 0];FAIL;ArithmeticException: / by zero;0
+testDevide;[2147483647, 1];PASS;Success;0
+testDevide;[2147483647, -1];PASS;Success;0
+testDevide;[2147483647, 2147483647];PASS;Success;0
+testDevide;[2147483647, -2147483648];PASS;Success;0
+testDevide;[2147483647, 73];PASS;Success;0
+testDevide;[-2147483648, 0];FAIL;ArithmeticException: / by zero;0
+testDevide;[-2147483648, 1];PASS;Success;0
+testDevide;[-2147483648, -1];PASS;Success;0
+testDevide;[-2147483648, 2147483647];PASS;Success;0
+testDevide;[-2147483648, -2147483648];PASS;Success;0
+testDevide;[-2147483648, 73];PASS;Success;0
+testDevide;[73, 0];FAIL;ArithmeticException: / by zero;0
+testDevide;[73, 1];PASS;Success;0
+testDevide;[73, -1];PASS;Success;0
+testDevide;[73, 2147483647];PASS;Success;0
+testDevide;[73, -2147483648];PASS;Success;0
+testDevide;[73, 73];PASS;Success;0
